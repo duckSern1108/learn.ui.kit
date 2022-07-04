@@ -209,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				AF7254AC2872E21A0004C64C /* CoreData+TableView */,
-				AFC5C7AA2869ABE400D36510 /* CollectionView+Networking */,
+				AFC5C7AA2869ABE400D36510 /* MVVM+CollectionView+Networking */,
 				AF7102CF2872FCDF00583E29 /* KeyChain+UserDefaults */,
 				AFC5C7B9286C009000D36510 /* LoadingViewController.swift */,
 				AFC5C7BA286C009000D36510 /* LoadingViewController.xib */,
@@ -320,7 +320,7 @@
 			path = learn.ui.kitUITests;
 			sourceTree = "<group>";
 		};
-		AFC5C7AA2869ABE400D36510 /* CollectionView+Networking */ = {
+		AFC5C7AA2869ABE400D36510 /* MVVM+CollectionView+Networking */ = {
 			isa = PBXGroup;
 			children = (
 				AFC5C7AB2869ABF500D36510 /* MainViewController.swift */,
@@ -331,7 +331,7 @@
 				AFC5C7B42869B41800D36510 /* Header.xib */,
 				AF7254AF2872E6760004C64C /* MainViewModel.swift */,
 			);
-			path = "CollectionView+Networking";
+			path = "MVVM+CollectionView+Networking";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
