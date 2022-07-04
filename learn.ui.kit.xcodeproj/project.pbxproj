@@ -176,6 +176,15 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		AF7102CF2872FCDF00583E29 /* KeyChain+UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				AF1207332865CE57001516A8 /* PinkViewController.swift */,
+				AF1207342865CE57001516A8 /* PinkViewController.xib */,
+			);
+			path = "KeyChain+UserDefaults";
+			sourceTree = "<group>";
+		};
 		AF7254AB2872DC910004C64C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,23 +195,22 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		AF7254AC2872E21A0004C64C /* BlackViewController */ = {
+		AF7254AC2872E21A0004C64C /* CoreData+TableView */ = {
 			isa = PBXGroup;
 			children = (
 				AF1207182865647C001516A8 /* BlackViewController.swift */,
 				AF1207192865647C001516A8 /* BlackViewController.xib */,
 				AFA9C79B2872927C00BE73B7 /* MusicCell */,
 			);
-			path = BlackViewController;
+			path = "CoreData+TableView";
 			sourceTree = "<group>";
 		};
 		AFA9C797287291E200BE73B7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AF7254AC2872E21A0004C64C /* BlackViewController */,
-				AFC5C7AA2869ABE400D36510 /* MainViewController */,
-				AF1207332865CE57001516A8 /* PinkViewController.swift */,
-				AF1207342865CE57001516A8 /* PinkViewController.xib */,
+				AF7254AC2872E21A0004C64C /* CoreData+TableView */,
+				AFC5C7AA2869ABE400D36510 /* CollectionView+Networking */,
+				AF7102CF2872FCDF00583E29 /* KeyChain+UserDefaults */,
 				AFC5C7B9286C009000D36510 /* LoadingViewController.swift */,
 				AFC5C7BA286C009000D36510 /* LoadingViewController.xib */,
 				AFA9C79D2872968B00BE73B7 /* HomeViewController.swift */,
@@ -312,7 +320,7 @@
 			path = learn.ui.kitUITests;
 			sourceTree = "<group>";
 		};
-		AFC5C7AA2869ABE400D36510 /* MainViewController */ = {
+		AFC5C7AA2869ABE400D36510 /* CollectionView+Networking */ = {
 			isa = PBXGroup;
 			children = (
 				AFC5C7AB2869ABF500D36510 /* MainViewController.swift */,
@@ -323,7 +331,7 @@
 				AFC5C7B42869B41800D36510 /* Header.xib */,
 				AF7254AF2872E6760004C64C /* MainViewModel.swift */,
 			);
-			path = MainViewController;
+			path = "CollectionView+Networking";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
