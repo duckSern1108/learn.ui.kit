@@ -12,7 +12,7 @@ import ObjectMapper
 class PromiseRouter {
     static func promiseGetHotMusic() -> Promise<HotMusicReponse> {
         return Promise<HotMusicReponse> { seal in
-            ApiMain.get(path: APIMusic.path + APIMusic.hotMusicPath + "/\(4)/albums.json") {
+            ApiMain.get(path: APIMusic.path + APIMusic.hotMusicPath + "/\(20)/albums.json") {
                 switch $0.result {
                 case .success(let data):
                     let result = Mapper<HotMusicReponse>().map(JSONString: data)!

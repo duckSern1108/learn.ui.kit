@@ -33,12 +33,12 @@ class MainViewController: UIViewController {
         //set up navigation bar
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(
-            title: "Hello",
+            title: "Login",
             style: .plain,
             target: self,
             action: #selector(button)
         )
-//        navigationController?.navigationBar.tintColor = .red
+        //        navigationController?.navigationBar.tintColor = .red
         
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
@@ -52,24 +52,24 @@ class MainViewController: UIViewController {
         //viewmodel
         viewModel.delegate = self
         
-        viewModel.loadMusicData()
+        self.loadMusicData()
+    }
+    
+    func loadMusicData() {
+        let loadingVC = LoadingViewController()
+        add(loadingVC)
+        firstly {
+            viewModel.loadMusicDataUsePromiseKit()
+        }.done{
+            loadingVC.remove()
+        }
+        
     }
     
     @objc func button() {
         print("Hello button pressed")
+        coordinator?.goToLogin(delegate: nil)
     }
-    
-    @objc private func popViewController() {
-        // Add custom logic code
-        navigationController?.popViewController(animated: true)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.navigationBar.prefersLargeTitles = false
-    }
-    
-   
-    
     
 }
 

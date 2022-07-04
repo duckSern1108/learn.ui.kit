@@ -20,8 +20,8 @@ class MainViewModel {
         }
     }
     weak var delegate: MainViewModelDelegate?
-    func loadMusicDataUsePromiseKit() {
-        firstly {
+    func loadMusicDataUsePromiseKit() -> Promise<Void> {
+        return firstly {
             PromiseRouter.promiseGetHotMusic()
         }.done { data in
             self.fetchedMusics = data.musics
@@ -29,7 +29,7 @@ class MainViewModel {
         }
     }
     
-    func loadMusicData() {
+    func loadMusicData(completion:@escaping () -> Void) {
         APIMusic.getHotMusic(limit: 10) { response in
             switch response {
             case .failure(let error):
@@ -38,6 +38,7 @@ class MainViewModel {
                 self.fetchedMusics = data.musics
                 self.filteredMusics = data.musics
             }
+            completion()
             
         }
     }
