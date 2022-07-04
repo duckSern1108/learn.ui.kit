@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-learn.ui.kit-learn.ui.kitUITests/Pods-learn.ui.kit-learn.ui.kitUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
+${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework

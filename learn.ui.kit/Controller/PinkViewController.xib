@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PinkViewController" customModule="learn_ui_kit" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="hA0-Hn-e7h" id="B13-SY-4SB"/>
+                <outlet property="passwordTextFiled" destination="Xuq-4h-jh1" id="lfk-9p-kRR"/>
+                <outlet property="usernameTextFiled" destination="LH7-7B-lmW" id="57b-bM-Thf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hA0-Hn-e7h">
+                    <rect key="frame" x="158.5" y="235" width="97" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                    <connections>
+                        <action selector="onEditingEnd:" destination="-1" eventType="editingDidEnd" id="ILP-3L-fxD"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LH7-7B-lmW">
+                    <rect key="frame" x="158.5" y="285" width="97" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xuq-4h-jh1">
+                    <rect key="frame" x="162" y="335" width="90.5" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atn-yu-Wyf">
+                    <rect key="frame" x="177" y="385" width="60" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                    <connections>
+                        <action selector="onLoginTapped:" destination="-1" eventType="touchUpInside" id="hJ8-Hc-pNt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemPinkColor"/>
+            <constraints>
+                <constraint firstItem="hA0-Hn-e7h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="09E-AC-DGb"/>
+                <constraint firstItem="LH7-7B-lmW" firstAttribute="top" secondItem="hA0-Hn-e7h" secondAttribute="bottom" constant="16" id="6oW-mf-0HI"/>
+                <constraint firstItem="LH7-7B-lmW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TZo-kS-CZd"/>
+                <constraint firstItem="Xuq-4h-jh1" firstAttribute="top" secondItem="LH7-7B-lmW" secondAttribute="bottom" constant="16" id="VE6-gW-Zxz"/>
+                <constraint firstItem="atn-yu-Wyf" firstAttribute="top" secondItem="Xuq-4h-jh1" secondAttribute="bottom" constant="16" id="VQf-Nz-OQg"/>
+                <constraint firstItem="hA0-Hn-e7h" firstAttribute="width" secondItem="LH7-7B-lmW" secondAttribute="width" id="a2w-bb-Hyl"/>
+                <constraint firstItem="hA0-Hn-e7h" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="191" id="aVr-HP-Ohv"/>
+                <constraint firstItem="Xuq-4h-jh1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hUv-nb-93G"/>
+                <constraint firstItem="atn-yu-Wyf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l1b-WZ-lXV"/>
+                <constraint firstItem="LH7-7B-lmW" firstAttribute="width" secondItem="atn-yu-Wyf" secondAttribute="width" multiplier="1.61667" id="zLU-y9-LWZ"/>
+            </constraints>
+            <point key="canvasLocation" x="229" y="-56"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
