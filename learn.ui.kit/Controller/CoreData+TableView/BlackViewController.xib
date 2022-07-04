@@ -22,15 +22,49 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-Mw-16Q">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gN-60-g5Q">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRo-4x-yMs">
+                                    <rect key="frame" x="16" y="20" width="50" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Add"/>
+                                    <connections>
+                                        <action selector="onAddItem:" destination="-1" eventType="touchUpInside" id="eyk-FI-Cid"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2G-sx-5zp">
+                                    <rect key="frame" x="316" y="20" width="82" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="tinted" title="DeleteAll">
+                                        <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="onDeleteAllItem:" destination="-1" eventType="touchUpInside" id="SOF-zG-DgQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Q2G-sx-5zp" firstAttribute="centerY" secondItem="7gN-60-g5Q" secondAttribute="centerY" id="7uU-fa-plm"/>
+                                <constraint firstAttribute="height" constant="71" id="IC0-0h-wjw"/>
+                                <constraint firstAttribute="trailing" secondItem="Q2G-sx-5zp" secondAttribute="trailing" constant="16" id="QOF-lf-qnK"/>
+                                <constraint firstItem="KRo-4x-yMs" firstAttribute="centerY" secondItem="7gN-60-g5Q" secondAttribute="centerY" id="UAj-6S-kDd"/>
+                                <constraint firstItem="KRo-4x-yMs" firstAttribute="leading" secondItem="7gN-60-g5Q" secondAttribute="leading" constant="16" id="hrD-sB-u9L"/>
+                            </constraints>
+                        </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O37-Gu-qOU">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <rect key="frame" x="0.0" y="87" width="414" height="731"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemYellowColor"/>
                     <constraints>
-                        <constraint firstItem="O37-Gu-qOU" firstAttribute="top" secondItem="Hf7-Mw-16Q" secondAttribute="top" id="6zU-rV-r7V"/>
+                        <constraint firstItem="O37-Gu-qOU" firstAttribute="top" secondItem="7gN-60-g5Q" secondAttribute="bottom" constant="16" id="2DU-Wk-acK"/>
+                        <constraint firstItem="7gN-60-g5Q" firstAttribute="leading" secondItem="Hf7-Mw-16Q" secondAttribute="leading" id="4Ol-aT-mFb"/>
+                        <constraint firstAttribute="trailing" secondItem="7gN-60-g5Q" secondAttribute="trailing" id="Cwn-V9-icC"/>
                         <constraint firstAttribute="trailing" secondItem="O37-Gu-qOU" secondAttribute="trailing" id="FqX-bL-gdQ"/>
+                        <constraint firstItem="7gN-60-g5Q" firstAttribute="top" secondItem="Hf7-Mw-16Q" secondAttribute="top" id="Qb3-jm-Tej"/>
                         <constraint firstItem="O37-Gu-qOU" firstAttribute="leading" secondItem="Hf7-Mw-16Q" secondAttribute="leading" id="sAm-1J-i1s"/>
                         <constraint firstAttribute="bottom" secondItem="O37-Gu-qOU" secondAttribute="bottom" id="ue9-6x-l7j"/>
                     </constraints>
@@ -51,6 +85,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

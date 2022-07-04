@@ -42,12 +42,19 @@ class BlackViewController: UIViewController {
         
         do {
             try managedContext.save()
-//            print("save success")
+            //            print("save success")
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
     
+    @IBAction func onDeleteAllItem(_ sender: Any) {
+        self.deleteAll()
+        tableView.reloadData()
+    }
+    @IBAction func onAddItem(_ sender: Any) {
+        save(name: "Son", artistName: "Son", artworkUrl100: "https://picsum.photos/200/300")
+    }
     func delete(at indexPath: IndexPath) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
@@ -139,11 +146,6 @@ class BlackViewController: UIViewController {
         tableView.refreshControl = refreshControl
         initializeFetchedResultsController()
         refreshControl.addTarget(self, action: #selector(reload), for: .valueChanged)
-//        save(name: "Son", artistName: "Son", artworkUrl100: "https://picsum.photos/200/300")
-//        save(name: "Son", artistName: "Son", artworkUrl100: "https://picsum.photos/200/300")
-//        save(name: "Son", artistName: "Son", artworkUrl100: "https://picsum.photos/200/300")
-        //        deleteAll()
-        
     }
     
     @objc func reload(){
