@@ -46,6 +46,7 @@
 		AFDE9F4B288A7FC900B6A223 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDE9F49288A7FC900B6A223 /* DetailViewController.xib */; };
 		AFDE9F4D288A932800B6A223 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE9F4C288A932800B6A223 /* ApiResponse.swift */; };
 		AFDE9F4F288A962000B6A223 /* UIImageView.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE9F4E288A962000B6A223 /* UIImageView.ext.swift */; };
+		AFDE9F51288A982A00B6A223 /* MusicCoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE9F50288A982A00B6A223 /* MusicCoreDataController.swift */; };
 		DB9046FBCEB1EA0C266259F6 /* Pods_learn_ui_kitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A014A561911E2840C6B956A5 /* Pods_learn_ui_kitTests.framework */; };
 		E2C118DB58CFE6D7031D17FB /* Pods_learn_ui_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10C52FFB0AE0FED624530E7 /* Pods_learn_ui_kit.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +118,7 @@
 		AFDE9F49288A7FC900B6A223 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		AFDE9F4C288A932800B6A223 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		AFDE9F4E288A962000B6A223 /* UIImageView.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.ext.swift; sourceTree = "<group>"; };
+		AFDE9F50288A982A00B6A223 /* MusicCoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCoreDataController.swift; sourceTree = "<group>"; };
 		C10C52FFB0AE0FED624530E7 /* Pods_learn_ui_kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learn_ui_kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B93E8A8E74C7B7FC639039 /* Pods-learn.ui.kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn.ui.kit.debug.xcconfig"; path = "Target Support Files/Pods-learn.ui.kit/Pods-learn.ui.kit.debug.xcconfig"; sourceTree = "<group>"; };
 		F5A76DADDC5230D0B7CD3670 /* Pods-learn.ui.kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn.ui.kit.release.xcconfig"; path = "Target Support Files/Pods-learn.ui.kit/Pods-learn.ui.kit.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				AF1207182865647C001516A8 /* BlackViewController.swift */,
 				AF1207192865647C001516A8 /* BlackViewController.xib */,
+				AFDE9F50288A982A00B6A223 /* MusicCoreDataController.swift */,
 				AFA9C79B2872927C00BE73B7 /* MusicCell */,
 			);
 			path = "CoreData+TableView";
@@ -607,6 +610,7 @@
 				AFDE9F4F288A962000B6A223 /* UIImageView.ext.swift in Sources */,
 				AF12071D28656E97001516A8 /* API.swift in Sources */,
 				AF120721286570F2001516A8 /* API.manager.swift in Sources */,
+				AFDE9F51288A982A00B6A223 /* MusicCoreDataController.swift in Sources */,
 				AFC5C7B12869AEB500D36510 /* ImageCell.swift in Sources */,
 				AFC5C7A92869650400D36510 /* Router.swift in Sources */,
 				AFDE9F4D288A932800B6A223 /* ApiResponse.swift in Sources */,
