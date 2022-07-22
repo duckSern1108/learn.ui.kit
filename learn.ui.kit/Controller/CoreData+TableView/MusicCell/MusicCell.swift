@@ -20,6 +20,12 @@ class MusicCell: UITableViewCell {
         artWork100ImageView.layer.cornerRadius = 16
     }
     
+    func bindData(cellData: MusicCoreData) {
+        nameLabel.text = cellData.name
+        artitstNameLabel.text = cellData.artistName
+        artWork100ImageView.loadFromUrl(URLAddress: cellData.artworkUrl100!)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

@@ -167,13 +167,10 @@ extension BlackViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MusicCell
         let cellData = fetchedResultsController.object(at: indexPath)
-        cell.nameLabel?.text = cellData.name!
-        cell.artitstNameLabel?.text = cellData.artistName!
-        cell.artWork100ImageView?.loadFromUrl(URLAddress: cellData.artworkUrl100!)
+        cell.bindData(cellData: cellData)
         cell.onDeleteItem = {
             [weak self] currentCell in
-            let actualIndexPath = tableView.indexPath(for: currentCell)!
-            print(actualIndexPath)
+            let actualIndexPath = tableView.indexPath(for: currentCell)!            
             self?.delete(at: actualIndexPath)
         }
         return cell
