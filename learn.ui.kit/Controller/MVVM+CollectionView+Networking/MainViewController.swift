@@ -89,8 +89,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView,cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCell
         let data = viewModel.filteredMusics[indexPath.row]
-        cell.image.loadFromUrl(URLAddress: data.artworkUrl100)
-        cell.label.text = data.name
+        cell.bindData(labelText: data.name, imageUrl: data.artworkUrl100)        
         return cell
     }
     
@@ -108,7 +107,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case UICollectionView.elementKindSectionHeader :
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath) as! Header
             header.frame = CGRect(x: 0 , y: 0, width: self.view.frame.width, height: 50)
-            header.countLabel.text = "\(viewModel.filteredMusics.count)"
+            header.bindData(countLabelText: "\(viewModel.filteredMusics.count)")            
             return header
         default:
             fatalError("asdfasdfasd")
@@ -140,7 +139,10 @@ extension MainViewController: UISearchControllerDelegate, UISearchResultsUpdatin
 
 extension MainViewController: MainViewModelDelegate {
     func onFilteredMusicUpdate(_ viewModel: MainViewModel) {
-        self.collectionView.reloadData()
+        DispatchQueue.main.async { [weak self] in
+            self?.collectionView.reloadData()
+        }
+        
     }
 }
 

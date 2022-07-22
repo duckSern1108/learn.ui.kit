@@ -14,4 +14,7 @@ class Header: UICollectionReusableView {
         super.awakeFromNib()
         // Initialization code
     }
+    func bindData(countLabelText: String) {
+        countLabel.text = countLabelText
+    }
 }

@@ -17,4 +17,9 @@ class ImageCell: UICollectionViewCell {
         // Initialization code
     }
     
+    func bindData(labelText: String ,imageUrl: String) {
+        label.text = labelText
+        image.loadFromUrl(URLAddress: imageUrl)
+    }
+    
 }
