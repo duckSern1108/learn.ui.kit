@@ -50,19 +50,6 @@ enum Router: URLRequestConvertible {
     }
 }
 
-struct HotMusicReponse: Mappable {
-    var musics : [Music] = []
-    var title = ""
-    init?(map: Map) {
-    musics = []
-    }
-    mutating func mapping(map: Map) {
-        musics <- map["feed.results"]
-        title <- map["feed.title"]
-    }
-}
-
-
 class ApiMain {
     static func get(path: String = "", completion:@escaping (AFDataResponse<String>) -> Void) {
         AF.request(Router.get(path,nil)).responseString(completionHandler: completion)

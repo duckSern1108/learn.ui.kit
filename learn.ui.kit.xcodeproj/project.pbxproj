@@ -44,6 +44,7 @@
 		AFC5C7BE286C011E00D36510 /* ViewController.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C7BD286C011E00D36510 /* ViewController.ext.swift */; };
 		AFDE9F4A288A7FC900B6A223 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE9F48288A7FC900B6A223 /* DetailViewController.swift */; };
 		AFDE9F4B288A7FC900B6A223 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDE9F49288A7FC900B6A223 /* DetailViewController.xib */; };
+		AFDE9F4D288A932800B6A223 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE9F4C288A932800B6A223 /* ApiResponse.swift */; };
 		DB9046FBCEB1EA0C266259F6 /* Pods_learn_ui_kitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A014A561911E2840C6B956A5 /* Pods_learn_ui_kitTests.framework */; };
 		E2C118DB58CFE6D7031D17FB /* Pods_learn_ui_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10C52FFB0AE0FED624530E7 /* Pods_learn_ui_kit.framework */; };
 /* End PBXBuildFile section */
@@ -113,6 +114,7 @@
 		AFC5C7BD286C011E00D36510 /* ViewController.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.ext.swift; sourceTree = "<group>"; };
 		AFDE9F48288A7FC900B6A223 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AFDE9F49288A7FC900B6A223 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		AFDE9F4C288A932800B6A223 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		C10C52FFB0AE0FED624530E7 /* Pods_learn_ui_kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learn_ui_kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B93E8A8E74C7B7FC639039 /* Pods-learn.ui.kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn.ui.kit.debug.xcconfig"; path = "Target Support Files/Pods-learn.ui.kit/Pods-learn.ui.kit.debug.xcconfig"; sourceTree = "<group>"; };
 		F5A76DADDC5230D0B7CD3670 /* Pods-learn.ui.kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn.ui.kit.release.xcconfig"; path = "Target Support Files/Pods-learn.ui.kit/Pods-learn.ui.kit.release.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				AF120723286573C2001516A8 /* Music.swift */,
+				AFDE9F4C288A932800B6A223 /* ApiResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -602,6 +605,7 @@
 				AF120721286570F2001516A8 /* API.manager.swift in Sources */,
 				AFC5C7B12869AEB500D36510 /* ImageCell.swift in Sources */,
 				AFC5C7A92869650400D36510 /* Router.swift in Sources */,
+				AFDE9F4D288A932800B6A223 /* ApiResponse.swift in Sources */,
 				AF21B0A9286EA288004279D2 /* Coordinator.swift in Sources */,
 				AFB6D1B2285C72C300BE9CED /* AppDelegate.swift in Sources */,
 				AFB6D1B4285C72C300BE9CED /* SceneDelegate.swift in Sources */,
