@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="b7Q-ki-G7x">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cBj-SA-Uku">
                         <size key="itemSize" width="100" height="100"/>
@@ -36,7 +36,7 @@
                 <constraint firstItem="b7Q-ki-G7x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Aeg-AT-Znr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="b7Q-ki-G7x" secondAttribute="bottom" id="ErL-5p-Qmp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="b7Q-ki-G7x" secondAttribute="trailing" id="Ydc-hK-ZzZ"/>
-                <constraint firstItem="b7Q-ki-G7x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wSR-8E-nGd"/>
+                <constraint firstItem="b7Q-ki-G7x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wSR-8E-nGd"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
         </view>
