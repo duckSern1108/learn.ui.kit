@@ -26,24 +26,8 @@ class MusicCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
     @IBAction func onDeleteItem(_ sender: Any) {
         self.onDeleteItem(self)
-    }
-}
-
-
-extension UIImageView {
-    func loadFromUrl(URLAddress: String) {
-        guard let url = URL(string: URLAddress) else {
-            return
-        }
-        
-        DispatchQueue.main.async { [weak self] in
-            if let imageData = try? Data(contentsOf: url) {
-                if let loadedImage = UIImage(data: imageData) {
-                    self?.image = loadedImage
-                }
-            }
-        }
     }
 }
