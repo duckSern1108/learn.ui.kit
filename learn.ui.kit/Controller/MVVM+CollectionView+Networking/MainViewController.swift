@@ -107,7 +107,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case UICollectionView.elementKindSectionHeader :
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath) as! Header
             header.frame = CGRect(x: 0 , y: 0, width: self.view.frame.width, height: 50)
-            header.bindData(countLabelText: "\(viewModel.filteredMusics.count)")            
+            header.bindData(countLabelText: "\(viewModel.filteredMusics.count)")
             return header
         default:
             fatalError("asdfasdfasd")
@@ -117,7 +117,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //if selected item is equal to current selected item, ignore it
-        coordinator?.goToLogin(delegate: nil)
+        coordinator?.goToImageDetail(musicData: viewModel.filteredMusics[indexPath.row])
     }
     
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {

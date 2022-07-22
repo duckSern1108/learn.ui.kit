@@ -42,6 +42,8 @@
 		AFC5C7BB286C009000D36510 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C7B9286C009000D36510 /* LoadingViewController.swift */; };
 		AFC5C7BC286C009000D36510 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC5C7BA286C009000D36510 /* LoadingViewController.xib */; };
 		AFC5C7BE286C011E00D36510 /* ViewController.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5C7BD286C011E00D36510 /* ViewController.ext.swift */; };
+		AFDE9F4A288A7FC900B6A223 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE9F48288A7FC900B6A223 /* DetailViewController.swift */; };
+		AFDE9F4B288A7FC900B6A223 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDE9F49288A7FC900B6A223 /* DetailViewController.xib */; };
 		DB9046FBCEB1EA0C266259F6 /* Pods_learn_ui_kitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A014A561911E2840C6B956A5 /* Pods_learn_ui_kitTests.framework */; };
 		E2C118DB58CFE6D7031D17FB /* Pods_learn_ui_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10C52FFB0AE0FED624530E7 /* Pods_learn_ui_kit.framework */; };
 /* End PBXBuildFile section */
@@ -109,6 +111,8 @@
 		AFC5C7B9286C009000D36510 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		AFC5C7BA286C009000D36510 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		AFC5C7BD286C011E00D36510 /* ViewController.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.ext.swift; sourceTree = "<group>"; };
+		AFDE9F48288A7FC900B6A223 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AFDE9F49288A7FC900B6A223 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		C10C52FFB0AE0FED624530E7 /* Pods_learn_ui_kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learn_ui_kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B93E8A8E74C7B7FC639039 /* Pods-learn.ui.kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn.ui.kit.debug.xcconfig"; path = "Target Support Files/Pods-learn.ui.kit/Pods-learn.ui.kit.debug.xcconfig"; sourceTree = "<group>"; };
 		F5A76DADDC5230D0B7CD3670 /* Pods-learn.ui.kit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn.ui.kit.release.xcconfig"; path = "Target Support Files/Pods-learn.ui.kit/Pods-learn.ui.kit.release.xcconfig"; sourceTree = "<group>"; };
@@ -323,6 +327,7 @@
 		AFC5C7AA2869ABE400D36510 /* MVVM+CollectionView+Networking */ = {
 			isa = PBXGroup;
 			children = (
+				AFDE9F47288A7E7B00B6A223 /* DetailVC */,
 				AFC5C7AB2869ABF500D36510 /* MainViewController.swift */,
 				AFC5C7AC2869ABF500D36510 /* MainViewController.xib */,
 				AFC5C7AF2869AEB500D36510 /* ImageCell.swift */,
@@ -332,6 +337,15 @@
 				AF7254AF2872E6760004C64C /* MainViewModel.swift */,
 			);
 			path = "MVVM+CollectionView+Networking";
+			sourceTree = "<group>";
+		};
+		AFDE9F47288A7E7B00B6A223 /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				AFDE9F48288A7FC900B6A223 /* DetailViewController.swift */,
+				AFDE9F49288A7FC900B6A223 /* DetailViewController.xib */,
+			);
+			path = DetailVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +461,7 @@
 				AFC5C7B22869AEB500D36510 /* ImageCell.xib in Resources */,
 				AFB6D1BB285C72C700BE9CED /* Assets.xcassets in Resources */,
 				AFC5C7BC286C009000D36510 /* LoadingViewController.xib in Resources */,
+				AFDE9F4B288A7FC900B6A223 /* DetailViewController.xib in Resources */,
 				AF12071B2865647C001516A8 /* BlackViewController.xib in Resources */,
 				AF1207362865CE57001516A8 /* PinkViewController.xib in Resources */,
 				AFC5C7AE2869ABF500D36510 /* MainViewController.xib in Resources */,
@@ -591,6 +606,7 @@
 				AFB6D1B2285C72C300BE9CED /* AppDelegate.swift in Sources */,
 				AFB6D1B4285C72C300BE9CED /* SceneDelegate.swift in Sources */,
 				AF12071F2865705D001516A8 /* API.request.swift in Sources */,
+				AFDE9F4A288A7FC900B6A223 /* DetailViewController.swift in Sources */,
 				AFC5C7B52869B41800D36510 /* Header.swift in Sources */,
 				AFA9C79628728D6B00BE73B7 /* PromiseRouter.swift in Sources */,
 				AF12072928659633001516A8 /* MusicCell.swift in Sources */,

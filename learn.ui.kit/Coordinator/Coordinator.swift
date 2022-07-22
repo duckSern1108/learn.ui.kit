@@ -36,4 +36,10 @@ class MainCoordinator: Coordinator {
         pinkVC.delegate = delegate
         navigationController.pushViewController(pinkVC, animated: true)
     }
+    
+    func goToImageDetail(musicData: Music) {
+        let detailVC = DetailViewController()
+        detailVC.data = musicData
+        navigationController.pushViewController(detailVC, animated: true)
+    }
 }
